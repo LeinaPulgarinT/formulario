@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__section">
+            <h1 id="title">Sunrise Hotel</h1>
+            <p id="description">Para Sunrise Hotel es muy importante su opinión, con su aporte ¡mejoraremos! </p>
+        </section>
+    </header>
+    <main class="main">
+        <form id="survey-form" action="/hola" name="formulario">
+            <div class="datos-entrada">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre" required>
+
+                <label for="lastname" id="lastname-label">Apellidos</label>
+                <input type="text" id="lastname" placeholder="Ingrese sus apellidos">
+
+                <label for="email" id="email-label">Email</label>
+                <input name="email" id="email" placeholder="Ingrese su email" type="email" required>
+
+                <label for="number" id="number-label">Edad</label>
+                <input type="number" id="number" placeholder="Edad" min="10" max="100">
+            </div><br>
+
+            <div class="ocupacion">
+                <p>
+                    ¿Cuál es su ocupacion?
+                </p>
+                <select id="dropdown" name="role" class="labora-estudia" required>
+                    <option disabled="" selected="" value="">Elija su ocupación</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div><br>
+
+            <div class="buttons-radio">
+                <h3>¿Recomendaria Sunrise Hotel a un amigo?</h3>
+
+                <label for="si"><input type="radio" id="si" name="si-talvez-no" checked>Sí, lo recomendaria</label>
+                <label for="talvez"><input type="radio" id="talvez" name="si-talvez-no">Tal vez</label>
+                <label for="no"><input type="radio" id="no" name="si-talvez-no">No lo recomendaría</label>
+            </div><br>
+
+            <div class="gusto">
+                <p>
+                    ¿Qué fue lo que más le gusto de nuestro servicio?
+                </p>
+                <select id="desplegable" name="role" class="satisfaccion" required>
+                    <option disabled="" selected="" value="">Elija lo que más le gustó</option>
+                    <option value="atencion">Atención</option>
+                    <option value="comodida">Comodidad</option>
+                    <option value="limpieza">Limpieza</option>
+                    <option value="alimentacion">Alimentacion</option>
+                    <option value="atracciones">Atracciones</option>
+                    <option value="zonas-verdes">Zonas verdes</option>
+                    <option value="gym">Gym</option>
+                    <option value="other">otros</option>
+                </select>
+            </div><br>
+
+            <div class="mejoras">
+
+                <p>¿Qué te gustaría ver mejorado? </p>
+                <label for="comodidad"><input id="comodidad" type="checkbox" name="personality" value="comodidad" >Comodidad</label>
+                <label for="atencion"><input id="atencion" type="checkbox" name="personality" value="atencion"checked>Atención</label>
+                <label for="alimentacion"><input id="alimentacion" type="checkbox" name="personality" value="alimentacion">Alimentacion</label>
+                <label for="limpieza"><input id="limpieza" type="checkbox" name="personality" value="limpieza">Limpieza</label>
+                <label for="privacidad"><input id="privacidad" type="checkbox" name="personality" value="privacidad">Privacidad</label>
+            </div><br>
+
+            <div class="calificacion">
+                <p>Antes de enviar la encuesta califique de 1 a 5 su experiencia con Sunrise Hotel, siendo 1 un mal servicio y siendo 5 un servicio excelente</p>
+
+                <label for="1"><input type="radio" id="1" name="1-2-3-4-5" checked>1</label>
+                <label for="2"><input type="radio" id="2" name="1-2-3-4-5">2</label>
+                <label for="3"><input type="radio" id="3" name="1-2-3-4-5">3</label>
+                <label for="4"><input type="radio" id="4" name="1-2-3-4-5" >4</label>
+                <label for="5"><input type="radio" id="5" name="1-2-3-4-5"checked>5</label><br>
+            </div><br>
+
+            <div class="comentario">
+                <p>Si desea agregar un comentario, o sugerencia lo tendremos encuenta, para Sunrise hotel lo mas importante es tener usuarios satisfechos.</p><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese aqui su comentario">
+                </textarea>
+            </div><br>
+
+            <button class="enviar" type="submit" id="submit">Enviar</button>
+
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <p>siguenos en nuestras redes sociales</p>
+
+        Todos los derechos reservados 2020</footer>
+</body>
+
+</html>
